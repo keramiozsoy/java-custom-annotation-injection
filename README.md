@@ -9,3 +9,14 @@ public @interface MyCustomInject {
     Class whichClass();
 }
 ```
+
+Usage
+```SHELL
+
+@MyCustomInject(whichClass = Dog.class)
+public static Animal animal;
+
+@MyCustomInject(whichClass = Horse.class)
+public static Animal anotherAnimal;
+
+```
